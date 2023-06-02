@@ -1,0 +1,17 @@
+// _ 开头的scss文件不会被编译成单独的 css 文件
+// 需要将这些 _ 开头的scss文件在一个单独的 scss 文件中进行引入之后，这些文件的内容将会被编译到当前文件中
+// 在引入的时候也不需要写 _
+// config
+@import "variables";
+
+// layout
+@import "reboot";
+
+// mixin
+@import "mixins";
+
+// button
+@import "../components/Button/style";
+
+// menu
+@import "../components/Menu/style";
